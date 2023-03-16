@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -63,12 +64,19 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "test-angular:build",
+            "proxyConfig": "./proxy.conf.json"
+          }
+          },
           "configurations": {
             "production": {
-              "browserTarget": "test-angular:build:production"
+              "browserTarget": "test-angular:build:production",
+              "proxyConfig": "./proxy.conf.json"
             },
             "development": {
-              "browserTarget": "test-angular:build:development"
+              "browserTarget": "test-angular:build:development",
+              "proxyConfig": "./proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
@@ -93,15 +101,15 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
+    },
+    "cli": {
+      "analytics": "531f2485-72aa-47ea-ba07-7be645fc93c9"
     }
-  },
-  "cli": {
-    "analytics": "edcd375b-8a92-4ba4-b638-92615c6befd5"
-  }
 }
