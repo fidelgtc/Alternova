@@ -1,6 +1,5 @@
 mat-sidenav {
-  margin: 16px;
-  margin-bottom: 50px;
+  margin: 16px 16px 50px;
   // min-width: 50vw;
   border-right: none;
   background: #000000;
@@ -8,20 +7,6 @@ mat-sidenav {
   border-radius: 10px;
   padding: 16px;
   text-align: center;
-}
-
-.content {
-  height: calc(100vh - 98px);
-  border-radius: 10px;
-  margin: 16px;
-  margin-left: 32px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 2rem;
-  color: lightgray;
 }
 
 mat-sidenav-container {

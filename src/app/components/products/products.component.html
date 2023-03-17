@@ -12,8 +12,8 @@
       </mat-card-content>
       <mat-card-actions fxFlex="45" fxLayoutAlign="space-between center">
         <button mat-button fxFlex.lt-md="10">{{product.stock}}</button>
-        <button mat-button fxHide.lt-md fxFlex [disabled]="product.stock <= 0" (click)="addToCart(product)">ADD TO CART</button>
-        <button mat-button fxHide.gt-sm fxFlex [disabled]="product.stock <= 0" (click)="addToCart(product)"><mat-icon>add_shopping_cart</mat-icon></button>
+        <button mat-button fxHide.lt-md fxFlex (click)="addToCart(product)">ADD TO CART</button>
+        <button mat-button fxHide.gt-sm fxFlex (click)="addToCart(product)"><mat-icon>add_shopping_cart</mat-icon></button>
       </mat-card-actions>
     </mat-card>
   </div>

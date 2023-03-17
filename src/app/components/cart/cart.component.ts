@@ -37,7 +37,7 @@ export class CartComponent implements OnInit, OnDestroy{
   }
 
   getTotalCost(): number {
-    var listCart: Product[] = this.dataSource.filteredData || [];
+    const listCart: Product[] = this.dataSource.filteredData || [];
     return listCart.map( m => m.unitPrice * m.quantity).reduce((acc, value) => acc + value, 0);
   }
 
