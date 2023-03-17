@@ -8,7 +8,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppComponent} from './app.component';
 import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 import {DataService} from "./shared/dataService/data.service";
-import {ComponentsModule} from "./components/components.module";
 
 @NgModule({
   declarations: [
