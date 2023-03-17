@@ -26,9 +26,7 @@ import {ComponentsModule} from "./components/components.module";
     })
   ],
   providers: [],
-  exports: [
-    ComponentsModule
-  ],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
